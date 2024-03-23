@@ -1,0 +1,6 @@
+<section class="w-full h-full flex flex-col items-center justify-center transition" [ngClass]="{'light': !isDarkModeEnabled}">
+  <span class="text-3xl font-semibold">Toggle Theme</span>
+  <div class="tdnn" [ngClass]="isDarkModeEnabled?'tdnn':'day'" (click)="toggleTheme()">
+    <div class="moon" [ngClass]="isDarkModeEnabled?'moon':'sun'"></div>
+  </div>
+</section>
